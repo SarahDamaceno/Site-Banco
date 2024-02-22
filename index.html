@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Banco</title>
+    <link rel="stylesheet" href="style.css" media="all">
+
+    <link rel="stylesheet" href="style.telas_grandes.css">
+</head>
+<!-- Faça o site de banco com uma interfaxe interativa. Do que voce precisa? depositar/sacar. em baixo ter 3 quadrdaos. para sua empresa. duvidas frequentes nossas assinaturas-->
+<body>
+    <header>
+      <div id="onediv">
+        <h1><span class="destaque">Banco do Brasil.</span>  Clique aqui e veja soluções para <strong>Empresas e Setor  Público</strong> </h1>
+      </div>
+      <div id="twodiv"> 
+        <img src="img/bancoBrasil.png" alt="Slogan Banco do Brasil" id="imagembanco">
+        <ul>
+            <li><a href="#">Produtos e serviços</a></li>
+            <li><a href="#">Atendimento</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Buscar</a></li>
+        </ul>
+        <p><input type="button" id="button" value="Acesse sua conta"></p>
+      </div>
+    </header>
+    
+    <section id="container">
+      <p id="title">Consulte seu saldo</p>
+      <div id="consulta_saldo">
+          <p>
+              Saldo:
+              <span id="isaldo"></span>
+          </p> <br>
+  
+          <p>
+              Titular: 
+              <input type="text" name="ititular" id="ititular">
+          </p> <br>
+  
+          <p>
+              Depositar: 
+              <input type="number" id="idepositar" name="depositar">
+          </p> <br>
+  
+          <div id="res">
+             
+          </div> 
+          <input type="button" id="botaoDepositar" value="Depositar" onclick="enviar()">
+          <input type="button" id="botaoConsultar" value="Consultar" onclick="Consultar()">
+      </div>
+  </section>
+  
+
+
+    <script src="JavaScript_banco.js"></script>
+</body>
+</html>
